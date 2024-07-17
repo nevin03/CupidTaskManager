@@ -1,0 +1,120 @@
+html {
+    background-color: #e76ba94a;
+}
+
+.container-todo {
+    background-color: #ffa9de;
+    color: #ffffff;
+    width: 90vw;
+    margin: 5em auto;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: image();
+
+}
+
+.header {
+    color: rgb(242, 255, 0);
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: 800;
+
+}
+
+.input-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.5em;
+    border: 1px solid rgb(180, 176, 176);
+}
+
+.input-field {
+    width: 80%;
+    padding: .5em;
+    margin: 1em;
+    border: 1px;
+    border-radius: 10px;
+    background-color: #fd6ec6;
+    color: #ffffff;
+}
+
+.input-field::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size: larger;
+
+}
+
+.input-field:focus {
+    outline: none;
+    color: azure;
+}
+
+.add-button {
+    border-radius: 6px;
+    color: white;
+    border: 1px;
+    font-family: cursive;
+    background-color: #fd6ec6;
+
+}
+
+.delete-button {
+    border-radius: 6px;
+    color: #ffffff;
+    border: none;
+    margin: 0px 5px;
+    padding: 3px 5px;
+    float: right;
+    font-family: cursive;
+
+}
+
+.list-tasks {
+    padding: 10px;
+    margin: 3px;
+    font-size: large;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #fd6ec6;
+}
+
+
+.add-button {
+    transition: transform 0.3s ease;
+}
+
+.add-button.animate {
+    transform: scale(1.8);
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.delete-button {
+    transition: transform 0.3s ease;
+}
+
+.delete-button.animate {
+    animation: shake 0.3s;
+}
